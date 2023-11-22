@@ -103,12 +103,36 @@
   font-size: 18px;
 }
 
+.card__image-wrapper {
+  position: relative;
+  margin: 0;
+}
+
 .card__image {
   display: block;
   width: 100%;
   object-fit: cover;
   border-top: 2px solid currentColor;
   border-bottom: 2px solid currentColor;
+}
+
+.card__image-caption {
+  position: absolute;
+  top: clamp(1.5625rem, 1.4183rem + 0.6154vw, 1.6875rem);
+  right: clamp(0.6875rem, -0.3221rem + 4.3077vw, 1.5625rem);
+  font-family: "Press Start 2P";
+  font-size: 14px;
+  opacity: 0.5;
+  paint-order: stroke fill;
+  text-shadow: -1px 0 var(--background-color), 0 1px var(--background-color),
+    1px 0 var(--background-color), 0 -1px var(--background-color);
+}
+
+@supports (-webkit-text-stroke: 1px var(--background-color)) {
+  .card__image-caption {
+    -webkit-text-stroke: 1px var(--background-color);
+    text-shadow: none;
+  }
 }
 
 .card__content {
@@ -136,8 +160,8 @@
   min-width: 130px;
   padding: 10px 17px;
   border: 2px solid currentColor;
-  background: var(--background-color, #FFF);
-  font-family: 'Press Start 2P';
+  background: var(--background-color, #fff);
+  font-family: "Press Start 2P";
   font-size: 14px;
 }
 
@@ -149,7 +173,7 @@
 }
 
 .footer {
-  background: var(--background-color, #FFF);
+  background: var(--background-color, #fff);
   max-width: calc(100% * 310 / 375);
 }
 
@@ -162,7 +186,7 @@
   justify-content: center;
   background-color: transparent;
   border: 2px solid currentColor;
-  font-family: 'Press Start 2P';
+  font-family: "Press Start 2P";
   font-size: 14px;
 }
 
