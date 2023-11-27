@@ -10,6 +10,7 @@
   --background-color: #fff;
   --accent-color: #000;
   --button-text-color: #fff;
+  --heart-contour-color: #000;
   --background-image: repeating-linear-gradient(
       to right,
       #d3d3d3 0 2px,
@@ -25,6 +26,7 @@
   --background-color: #000;
   --accent-color: #00cc14;
   --button-text-color: #00cc14;
+  --heart-contour-color: #00cc14;
   --background-image: repeating-linear-gradient(
       to right,
       #000 0 2px,
@@ -41,6 +43,7 @@
     --background-color: #000;
     --accent-color: #00cc14;
     --button-text-color: #00cc14;
+    --heart-contour-color: #00cc14;
     --background-image: repeating-linear-gradient(
         to right,
         #000 0 2px,
