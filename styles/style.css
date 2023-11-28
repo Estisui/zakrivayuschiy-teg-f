@@ -321,6 +321,10 @@
   padding-right: clamp(1.875rem, 3.221rem + -3.077vw, 2.5rem);
 }
 
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
 .dialog[open] {
   max-width: clamp(21.313rem, 20.159rem + 4.923vw, 22.313rem);
   display: flex;
