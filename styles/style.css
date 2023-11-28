@@ -158,6 +158,38 @@
   border-bottom: 2px solid currentColor;
 }
 
+/* filters */
+
+.card:nth-of-type(2) .card__image {
+  filter: saturate(885%);
+}
+
+.card:nth-of-type(3) .card__image {
+  filter: hue-rotate(285deg);
+}
+
+.card:nth-of-type(4) .card__image {
+  filter: blur(4px);
+}
+
+.card:nth-of-type(5) .card__image {
+  filter: sepia(69%);
+}
+
+.card:nth-of-type(6) .card__image {
+  filter: grayscale(100%);
+}
+
+.card:nth-of-type(7) .card__image {
+  filter: brightness(20%);
+}
+
+.card:nth-of-type(8) .card__image {
+  filter: sepia(85%) hue-rotate(257deg) saturate(502%);
+}
+
+/* filters end */
+
 .card__image-caption {
   position: absolute;
   top: clamp(1.5625rem, 1.4183rem + 0.6154vw, 1.6875rem);
