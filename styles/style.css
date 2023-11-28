@@ -148,14 +148,14 @@
 .card__image-wrapper {
   position: relative;
   margin: 0;
+  border-top: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
 }
 
 .card__image {
   display: block;
   width: 100%;
   object-fit: cover;
-  border-top: 2px solid currentColor;
-  border-bottom: 2px solid currentColor;
 }
 
 /* filters */
