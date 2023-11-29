@@ -46,12 +46,12 @@
   font-family: var(--accent-font);
 }
 
-.header__title {
+.header__logo {
   font-size: clamp(3.063rem, 1.909rem + 4.923vw, 4.063rem);
   text-transform: uppercase;
 }
 
-.header__subtitle {
+.header__title {
   font-size: clamp(0.875rem, 0.226rem + 2.769vw, 1.438rem);
   text-transform: uppercase;
   margin-top: 20px;
@@ -352,6 +352,7 @@ dialog::backdrop {
 }
 
 .dialog__button {
+  width: 100%;
   text-transform: uppercase;
   padding: 9px 17px;
 }
